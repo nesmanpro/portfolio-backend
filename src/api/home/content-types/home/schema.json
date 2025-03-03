@@ -35,9 +35,6 @@
       ]
     },
     "description": {
-      "type": "richtext"
-    },
-    "rich_description": {
       "type": "blocks"
     }
   }

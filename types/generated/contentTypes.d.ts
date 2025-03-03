@@ -424,11 +424,10 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.RichText;
+    description: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'>;
     publishedAt: Schema.Attribute.DateTime;
-    rich_description: Schema.Attribute.Blocks;
     subtitle: Schema.Attribute.String;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
@@ -465,7 +464,6 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Blocks;
-    description_md: Schema.Attribute.RichText;
     Images: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true

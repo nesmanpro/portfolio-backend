@@ -12,6 +12,7 @@ module.exports = ({ env }) => ({
                 uploadStream: {},
                 delete: {},
             },
+
         },
     },
 });

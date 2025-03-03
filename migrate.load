@@ -1,0 +1,3 @@
+LOAD DATABASE
+FROM sqlite:.tmp/data.db
+INTO postgresql://postgres:2CafesParaLaPichi!!@db.yibnbekrletkkjsoqajj.supabase.co/postgres
